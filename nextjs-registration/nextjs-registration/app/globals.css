@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; background: #f3f6fa; color: #1b2733; }
+.container { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.card { width: 100%; max-width: 420px; background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 4px 24px rgba(31, 78, 121, 0.12); }
+h1 { margin: 0 0 20px; font-size: 1.5rem; color: #1f4e79; }
+label { display: block; margin: 14px 0 6px; font-weight: 600; font-size: 0.9rem; }
+input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 10px 12px; border: 1px solid #c3ccd6; border-radius: 8px; font-size: 1rem; }
+input[aria-invalid="true"] { border-color: #c0392b; }
+input:focus { outline: 2px solid #2e75b6; outline-offset: 1px; }
+.check { display: flex; gap: 8px; align-items: center; font-weight: 400; }
+.error { color: #c0392b; font-size: 0.85rem; margin: 6px 0 0; }
+button, .link-button { display: inline-block; width: 100%; margin-top: 20px; padding: 12px; background: #1f4e79; color: #fff; border: 0; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; }
+button:hover:not(:disabled), .link-button:hover { background: #2e75b6; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+.alert { padding: 10px 12px; border-radius: 8px; font-size: 0.9rem; }
+.alert.success { background: #eaf6ec; color: #1e6b3a; }
+.alert.error { background: #fdecea; color: #a8281c; }
+.strength { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 0.8rem; color: #5f6b76; }
+.bar { height: 6px; flex: 1; border-radius: 3px; background: #dfe5eb; position: relative; overflow: hidden; }
+.bar::after { content: ""; position: absolute; inset: 0 auto 0 0; background: #c0392b; width: 0; }
+.bar.s1::after { width: 25%; } .bar.s2::after { width: 50%; background: #d68910; }
+.bar.s3::after { width: 75%; background: #2e8b57; } .bar.s4::after { width: 100%; background: #2e8b57; }

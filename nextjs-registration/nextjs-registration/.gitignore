@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+dist/
+build/
+
+# secrets
+.env
+.env.local
+
+# local data (contains user records)
+data/users.json
+
+# system files
+.DS_Store
+*.log
